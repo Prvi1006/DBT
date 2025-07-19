@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: Emp_details
+    database: DBT_TRANSFORM
+
+    schema: EMPLOYEES_DETAILS
+
+    tables:
+      - name: DEPARTMENTS
+      - name: EMPLOYEES
+      - name: JOBS
+      - name: LOCATIONS
+      - name: SALARIES

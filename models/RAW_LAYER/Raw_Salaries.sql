@@ -4,4 +4,5 @@
     )
 }}
 
-select  * from {{ source('Emp_details', 'LOCATIONS') }}
+
+select * from {{ source('Emp_details', 'SALARIES') }}

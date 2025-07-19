@@ -4,4 +4,4 @@
     )
 }}
 
-select * from DBT_TRANSFORM.EMPLOYEES_DETAILS.DEPARTMENTS
+select * from {{ source('Emp_details', 'DEPARTMENTS') }}
