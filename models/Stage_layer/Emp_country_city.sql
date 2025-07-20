@@ -7,7 +7,6 @@
 {% set value = 2 %}
 
 SELECT 
-    {{ dbt_utils.generate_surrogate_key(['l.location_id', 'd.dept_id','e.emp_id']) }},
     l.country,
     l.city,
     COUNT(e.emp_id) AS num_employees

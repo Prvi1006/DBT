@@ -15,6 +15,6 @@ FROM {{ ref('Raw_employees') }} e
 JOIN {{ ref('Raw_departments') }} d 
     ON e.dept_id = d.dept_id
 JOIN {{ ref('Raw_locations') }} l 
-    ON d.location_id = l.location_id
+    ON d.location_id = l.location_i
 GROUP BY l.country, l.city
 HAVING COUNT(e.emp_id) >= {{ value }}
