@@ -6,5 +6,3 @@ models:
       - name: DEPT_NAME
         tests:
           - not_null
-          
-      
